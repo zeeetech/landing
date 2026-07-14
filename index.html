@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>/zeetech - tech ed, dev & expertise</title>
+    <meta
+      name="description"
+      content="Zeetech: educação em tecnologia, desenvolvimento de software e código aberto. Software que aguenta o tranco, feito por quem leva a sério abrir espaço pra quem o mercado tech costuma ignorar."
+    />
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="/zeetech - tech ed, dev & expertise" />
+    <meta
+      property="og:description"
+      content="Educação em tecnologia, desenvolvimento de software e código aberto."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zeetech.io" />
+    <meta property="og:site_name" content="zeetech" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:image" content="https://zeetech.io/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="/zeetech - tech ed, dev & expertise"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="/zeetech - tech ed, dev & expertise" />
+    <meta
+      name="twitter:description"
+      content="Educação em tecnologia, desenvolvimento de software e código aberto."
+    />
+    <meta name="twitter:image" content="https://zeetech.io/og.png" />
+
+    <!-- no-flash: mark JS present before paint so card reveal doesn't hide no-JS content -->
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+
+    <!-- Brand fonts: Ubuntu Mono ~ MonoLisa (display), Ubuntu (corpo). Ubuntu Mono é o substituto livre que o kit da marca já distribui. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#inicio">pular pro conteúdo</a>
+
+    <!-- shared symbol (robô/capuz com visor reflexivo, Z oculto) -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="zee" viewBox="0 0 83.15 78.82">
+        <path
+          fill="#9655ff"
+          d="M0,41.92V1.98h17.12v5.62c2.31-1.62,4.82-2.99,7.53-4.1.53-.23,1.07-.44,1.6-.63,2.62-.99,5.39-1.71,8.27-2.17,2.26-.41,4.61-.65,7.06-.7,2.42.05,4.77.29,7.04.7,2.88.45,5.65,1.18,8.27,2.17.54.19,1.07.41,1.6.63,2.7,1.1,5.21,2.47,7.53,4.1V1.98h17.11v39.94l-.03,2.22v1.85c-.1,6.41-1.21,12.21-3.27,17.45-.49,1.25-1.02,2.44-1.62,3.59-2.01,4.01-4.6,7.51-7.77,10.56-.43.41-.87.81-1.32,1.2,3.94-6.32,6.26-14.06,6.26-22.41,0-21.35-14.71-35.73-33.39-35.73S7.75,35.03,7.75,56.38c0,8.37,2.33,16.12,6.29,22.44-.46-.4-.91-.81-1.36-1.23-3.16-3.04-5.75-6.54-7.76-10.56-.6-1.15-1.13-2.35-1.62-3.59C1.23,58.2.13,52.4.03,45.99c-.02-.34-.02-.68-.02-1.04l-.02-3.03Z"
+        />
+        <path
+          fill="#fef5bc"
+          d="M48.6,39.24l-28.29,29.93c-2.01-3.74-3.15-8.06-3.15-12.65,0-2.1.24-4.13.69-6.08h10.09v-11.19h20.67Z"
+        />
+        <path
+          fill="#fef5bc"
+          d="M66.54,56.52c0,1.69-.15,3.34-.45,4.94h-10.38v10.95h-21.79l28.6-30.06c2.55,4.07,4.03,8.93,4.03,14.16"
+        />
+      </symbol>
+    </svg>
+
+    <!-- -- side nav -- -->
+    <nav class="side" aria-label="navegação">
+      <a class="brand" href="#inicio" aria-label="zeetech, início">
+        <svg><use href="#zee" /></svg>
+        <b><i>/</i>zeetech</b>
+      </a>
+      <a class="lnk" href="#inicio">/início</a>
+      <a class="lnk" href="#marca">/marca</a>
+      <a class="lnk" href="#trabalhos">/trabalhos</a>
+      <a class="lnk" href="#briefing">/briefing</a>
+      <a class="lnk" href="#empresa">/empresa</a>
+      <div class="spacer"></div>
+      <p class="hint">aperte <kbd>/</kbd><br />pra abrir o terminal</p>
+    </nav>
+
+    <!-- -- bottom bar (mobile) -- -->
+    <nav class="bottom" aria-label="navegação">
+      <a href="#inicio">início</a>
+      <a href="#marca">marca</a>
+      <a href="#trabalhos">trabalhos</a>
+      <a href="#briefing">briefing</a>
+      <a href="#empresa">empresa</a>
+    </nav>
+
+    <main class="shell">
+      <!-- -- HERO -- -->
+      <section id="inicio" class="hero">
+        <svg class="sym"><use href="#zee" /></svg>
+        <h1><span class="sl">/</span>zeetech</h1>
+        <p class="tag">tech ed, dev &amp; expertise</p>
+        <p class="pitch">
+          Por trás da Zeetech tem uma engenheira que curte três coisas:
+          <b>ensinar tecnologia</b>,
+          <b>construir software que aguenta o tranco</b> e manter
+          <b>código aberto</b>. Sem enrolação, sem mágica, e com espaço pra quem
+          o mercado costuma ignorar.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#briefing">Começar um projeto →</a>
+          <a class="btn" href="#trabalhos">Ver o que fazemos</a>
+        </div>
+      </section>
+
+      <!-- -- MARCA -- -->
+      <section id="marca">
+        <div class="vlabel">/a_marca</div>
+        <p class="eyebrow">/marca</p>
+        <h2 class="head">Visão, voz <span class="sl">&amp;</span> proposta</h2>
+        <p class="lead">
+          Construo software há tempo o bastante pra saber que o difícil quase
+          nunca é o código. É explicar bem, entregar algo que não quebra no mês
+          seguinte e lembrar que tem muita gente capaz que o mercado nunca
+          chamou pra mesa.
+        </p>
+
+        <div class="grid2">
+          <div class="panel">
+            <h3><span class="sl">/</span>visão</h3>
+            <p>
+              Formar gente boa de verdade, entregar solução que foge do padrão
+              engessado e tratar tecnologia como porta de entrada, não como
+              muro. O que eu faço respinga em quatro lugares:
+            </p>
+            <div class="spheres">
+              <span class="sphere">você</span>
+              <span class="sphere">pessoas</span>
+              <span class="sphere">mercado</span>
+              <span class="sphere">mundo</span>
+            </div>
+          </div>
+          <div class="panel">
+            <h3><span class="sl">/</span>proposta</h3>
+            <p>
+              Aula, mentoria e conteúdo de programação. Palestra e presença na
+              comunidade. E desenvolvimento de software sério pra empresa, com
+              uma base de código aberto embaixo de tudo.
+            </p>
+          </div>
+        </div>
+
+        <div class="panel" style="margin-top: 1.2rem">
+          <h3><span class="sl">/</span>como eu falo</h3>
+          <p>
+            Técnica sem te tratar como burro, próxima sem cair no papo
+            corporativo. Quando explico alguma coisa, explico de verdade, com
+            profundidade e sem atalho preguiçoso. As palavras que tento honrar:
+          </p>
+          <div class="voice">
+            <span class="chip">premium</span>
+            <span class="chip">humana</span>
+            <span class="chip">acessível</span>
+            <span class="chip">expertise</span>
+            <span class="chip">descolada</span>
+            <span class="chip">não-binária</span>
+            <span class="chip">clean</span>
+            <span class="chip">elegante</span>
+            <span class="chip">relax</span>
+            <span class="chip">excêntrica</span>
+            <span class="chip">jovem</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- -- TRABALHOS -- -->
+      <section id="trabalhos">
+        <div class="vlabel">/o_que_fazemos</div>
+        <p class="eyebrow">/trabalhos</p>
+        <h2 class="head">O que sai <span class="sl">das</span> minhas mãos</h2>
+        <p class="lead">
+          Quase tudo que faço é público. Código aberto que segura a stack,
+          consultoria de verdade e projetos que são a minha cara. Clica e vê.
+        </p>
+
+        <div class="group">
+          <span class="glabel">// código aberto</span>
+          <div class="cards">
+            <a
+              class="card"
+              href="https://github.com/zoedsoupe/proto_rune"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="ct">
+                <h4>proto_rune</h4>
+                <span class="arrow">↗</span>
+              </div>
+              <p>
+                SDK de Elixir pro AT Protocol e Bluesky. Transporte, schema e
+                structs em camadas separadas, e uma sessão que se renova sozinha
+                antes de expirar.
+              </p>
+              <span class="meta">elixir/sdk</span>
+            </a>
+            <a
+              class="card"
+              href="https://github.com/zoedsoupe/anubis-mcp"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="ct">
+                <h4>anubis-mcp</h4>
+                <span class="arrow">↗</span>
+              </div>
+              <p>
+                Model Context Protocol em Elixir. Cada cliente vira uma sessão
+                isolada: o tipo de coisa que o OTP faz de olhos fechados.
+              </p>
+              <span class="meta">elixir/mcp</span>
+            </a>
+            <a
+              class="card"
+              href="https://github.com/zoedsoupe/peri"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="ct">
+                <h4>peri</h4>
+                <span class="arrow">↗</span>
+              </div>
+              <p>
+                Schema como dado, validado por pattern matching. A única lib de
+                validação que eu deixo entrar em casa.
+              </p>
+              <span class="meta">elixir/lib</span>
+            </a>
+            <a
+              class="card"
+              href="https://github.com/zoedsoupe/nexus"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="ct">
+                <h4>nexus</h4>
+                <span class="arrow">↗</span>
+              </div>
+              <p>
+                Framework de CLI em Elixir. Comandos, flags e subcomandos
+                declarados como dado: monta a ferramenta e pronto.
+              </p>
+              <span class="meta">elixir/cli</span>
+            </a>
+            <a
+              class="card"
+              href="https://github.com/zoedsoupe/exlings"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="ct">
+                <h4>exlings</h4>
+                <span class="arrow">↗</span>
+              </div>
+              <p>
+                Aprenda Elixir consertando código quebrado, um exercício por
+                vez. No espírito do rustlings, mas na BEAM.
+              </p>
+              <span class="meta">elixir/edu</span>
+            </a>
+            <a
+              class="card"
+              href="https://hex.pm/packages?search=supabase&sort=recent_downloads"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="ct">
+                <h4>supabase-ex</h4>
+                <span class="arrow">↗</span>
+              </div>
+              <p>
+                O ecossistema Supabase inteiro em Elixir: auth, functions,
+                postgrest, realtime e storage, cada um no seu pacote.
+              </p>
+              <span class="meta">elixir/ecossistema</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="group">
+          <span class="glabel">// consultoria em desenvolvimento</span>
+          <div class="cards">
+            <a
+              class="card"
+              href="https://new-gen.ai"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="ct">
+                <h4>New Gen</h4>
+                <span class="arrow">↗</span>
+              </div>
+              <p>
+                Plataforma de RAG, base de conhecimento e eval em Elixir. Núcleo
+                de retrieval puro; LLM e vector store só na borda.
+              </p>
+              <span class="meta">elixir/rag/contrato</span>
+            </a>
+            <a
+              class="card"
+              href="https://supabase.com"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="ct">
+                <h4>Supabase</h4>
+                <span class="arrow">↗</span>
+              </div>
+              <p>
+                Consultoria e código no ecossistema Elixir do Supabase, dos SDKs
+                à integração no seu backend.
+              </p>
+              <span class="meta">elixir/backend</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="group">
+          <span class="glabel">// projetos autorais</span>
+          <div class="cards">
+            <a
+              class="card"
+              href="https://github.com/taina-labs"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="ct">
+                <h4>Tainá</h4>
+                <span class="arrow">↗</span>
+              </div>
+              <p>
+                Nuvem privada self-hosted pra comunidades donas dos próprios
+                dados. Monólito modular, LiveView, Postgres com RLS. Meu xodó.
+              </p>
+              <span class="meta">elixir/flagship</span>
+            </a>
+            <a
+              class="card"
+              href="https://hex.pm/packages/anu_ex"
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="ct">
+                <h4>anu</h4>
+                <span class="arrow">↗</span>
+              </div>
+              <p>
+                Gateway pra WhatsApp Business API. SDK aberto (anu-ex) na
+                frente, serviço fechado (anu-cloud) atrás.
+              </p>
+              <span class="meta">elixir/micro-saas</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="links">
+          <a href="https://github.com/zoedsoupe" target="_blank" rel="noopener"
+            >GitHub ↗</a
+          >
+          <a
+            href="https://www.linkedin.com/in/zoedsoupe"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn ↗</a
+          >
+          <a
+            href="https://hex.pm/users/zoedsoupe"
+            target="_blank"
+            rel="noopener"
+            >Hex.pm ↗</a
+          >
+        </div>
+      </section>
+
+      <!-- -- BRIEFING -- -->
+      <section id="briefing">
+        <div class="vlabel">/fala_com_a_gente</div>
+        <p class="eyebrow">/briefing</p>
+        <h2 class="head">Conta <span class="sl">o</span> projeto</h2>
+        <p class="lead">
+          Tem um produto pra tirar do papel ou uma ideia que precisa de mão
+          técnica de verdade? Me conta o que tá rolando aí. Eu leio tudo e
+          respondo.
+        </p>
+
+        <form id="briefing-form">
+          <div class="row">
+            <div class="field">
+              <label for="nome"><span class="sl">/</span>nome</label>
+              <input
+                id="nome"
+                name="nome"
+                type="text"
+                required
+                autocomplete="name"
+                placeholder="Como te chamo?"
+              />
+            </div>
+            <div class="field">
+              <label for="email"><span class="sl">/</span>email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+                placeholder="pra eu te responder"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label for="pronomes"
+              ><span class="sl">/</span>pronomes
+              <span class="opt">// opcional</span></label
+            >
+            <input
+              id="pronomes"
+              name="pronomes"
+              type="text"
+              autocomplete="off"
+              placeholder="ela/dela, elu/delu, they/them… como você quer ser tratada"
+            />
+            <span class="fieldnote"
+              >// pra eu te tratar do jeito certo. sem pressão.</span
+            >
+          </div>
+          <div class="field">
+            <label for="projeto"
+              ><span class="sl">/</span>descrição do projeto</label
+            >
+            <textarea
+              id="projeto"
+              name="projeto"
+              required
+              placeholder="O que você quer construir? Prazo, contexto, o que já existe. Escreve à vontade que eu entendo o resto."
+            ></textarea>
+          </div>
+          <button class="btn primary" type="submit">Enviar briefing →</button>
+          <p class="formnote">
+            // abre seu email com tudo preenchido. Sem backend, sem rastreio,
+            prometo.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <!-- -- EMPRESA/ FOOTER -- -->
+    <footer id="empresa">
+      <div class="frow">
+        <div class="legal">
+          <div class="sig">
+            <svg><use href="#zee" /></svg><span><i>/</i>zeetech</span>
+          </div>
+          <br />
+          <span class="k">razão social:</span> ZOEY DE SOUZA PESSANHA
+          CONSULTORIA EM TECNOLOGIA DA INFORMAÇÃO LTDA<br />
+          <span class="k">nome fantasia:</span> zeetech<br />
+          <span class="k">cnpj:</span> 51.907.268/0001-42<br />
+          <span class="k">contato:</span>
+          <a href="mailto:zoey.spessanha@zeetech.io"
+            >zoey.spessanha@zeetech.io</a
+          ><br />
+          <span class="k">web:</span>
+          <a href="https://zeetech.io">zeetech.io</a>
+        </div>
+        <div class="legal">
+          <span class="k">canais:</span><br />
+          <a href="https://github.com/zoedsoupe" target="_blank" rel="noopener"
+            >→ github.com/zoedsoupe</a
+          ><br />
+          <a
+            href="https://www.linkedin.com/in/zoedsoupe"
+            target="_blank"
+            rel="noopener"
+            >→ linkedin/in/zoedsoupe</a
+          ><br />
+          <a
+            href="https://hex.pm/users/zoedsoupe"
+            target="_blank"
+            rel="noopener"
+            >→ hex.pm/users/zoedsoupe</a
+          >
+        </div>
+      </div>
+      <p class="copy">
+        © <span id="year">2026</span> Zeetech / tech ed, dev &amp; expertise /
+        feito com Elixir no coração 💜
+      </p>
+    </footer>
+
+    <!-- -- command palette (easter egg) -- -->
+    <div
+      class="palette-bg"
+      id="pal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="terminal"
+    >
+      <div class="palette">
+        <div class="pin">
+          <span>/</span
+          ><input
+            id="pal-in"
+            placeholder="digita um comando (marca, briefing, whoami)"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+        <div class="out" id="pal-out"></div>
+        <ul id="pal-list"></ul>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
